@@ -47,5 +47,8 @@ func Convert(num float64) string {
 	if err != nil {
 		log.Fatal(err)
 	}
+	if num < 0 {
+		str = "负" + str
+	}
 	return str
 }
